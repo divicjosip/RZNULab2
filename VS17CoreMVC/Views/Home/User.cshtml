@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "User";
+}
+
+<h1>User</h1>
+
+@Html.ValidationSummary()
+<form action="@Url.Action("Index")" method="post">
+    <input type="text" placeholder="Insert user name" name="userName" />
+    <input type="submit" value="Enter" />
+</form>
+
